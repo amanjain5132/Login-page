@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Portal</title>
+
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(231, 231, 231);
+            background-image: url('https://raw.githubusercontent.com/akshkgd/mern-317/main/table%20and%20forms/bg.jpg');
+            background-size: cover;
+        }
+
+        .login-container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login {
+            border-radius: 16px;
+            background-color: #fff;
+            padding: 10px;
+            width: 350px;
+            text-align: center;
+            /* opacity: calc(90%); */
+        }
+
+        .input-form {
+            width: 100%;
+            padding: 16px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            font-size: 16px;
+
+        }
+
+        .input-form:focus {
+            outline: none;
+            border: 1px solid gray;
+
+        }
+
+        .login-btn {
+            background-color: rgb(15, 135, 255);
+            color: white;
+            padding: 17px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-bottom: 26px;
+        }
+
+        .small {
+            font-size: 14px;
+            color: #5d5d5d;
+        }
+
+        .link {
+            color: rgb(15, 135, 255);
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .mb-5 {
+            margin-bottom: 50px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .items {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <form action="" class="login">
+            <h1>Welcome back</h1>
+            <p class="small mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, labore nostrum.
+            </p>
+            <input type="email" class="input-form" placeholder="Enter your User name or Email">
+            <input type="password" class="input-form" placeholder="Enter your password">
+            <button class="login-btn">Login Now</button>
+            <p class="small">Forgot your password? <a class="link" href="">Reset Password</a></p>
+            <p class="small">Do not have account? <a class="link" href="">Signup Now</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
